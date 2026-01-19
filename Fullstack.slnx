@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Api/Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Cards/">
+    <Project Path="src/Modules/Cards/Cards.Api/Cards.Api.csproj" />
+    <Project Path="src/Modules/Cards/Cards.Application/Cards.Application.csproj" />
+    <Project Path="src/Modules/Cards/Cards.Domain/Cards.Domain.csproj" />
+    <Project Path="src/Modules/Cards/Cards.Infrastructure/Cards.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Payments/">
+    <Project Path="src/Modules/Payments/Payments.Api/Payments.Api.csproj" Id="de732e99-f1f4-4510-999b-4342e5ed8bfe" />
+    <Project Path="src/Modules/Payments/Payments.Application/Payments.Application.csproj" Id="320ed56a-e725-4638-817d-699bd10b1e00" />
+    <Project Path="src/Modules/Payments/Payments.Domain/Payments.Domain.csproj" Id="649bf89c-dc4e-47ac-83d4-7b71edccbe28" />
+    <Project Path="src/Modules/Payments/Payments.Infrastructure/Payments.Infrastructure.csproj" Id="40a10c95-3d0e-4502-a0cc-f8ec1e8ce009" />
+  </Folder>
+  <Folder Name="/src/Modules/Users/">
+    <Project Path="src/Modules/Users/Users.Api/Users.Api.csproj" Id="1aa69306-f26f-40dd-b4f3-80b7a897f0f6" />
+    <Project Path="src/Modules/Users/Users.Application/Users.Application.csproj" Id="b1503e0a-7972-488d-9ca6-b7578463f059" />
+    <Project Path="src/Modules/Users/Users.Domain/Users.Domain.csproj" Id="36f7579a-09ec-420e-9732-69233b3524e2" />
+    <Project Path="src/Modules/Users/Users.Infrastructure/Users.Infrastructure.csproj" Id="6e6b1633-3d22-4cba-b38b-69490130e457" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/Shared.Api/Shared.Api.csproj" />
+    <Project Path="src/Shared/Shared.Application/Shared.Application.csproj" />
+    <Project Path="src/Shared/Shared.Domain/Shared.Domain.csproj" />
+    <Project Path="src/Shared/Shared.Infrastructure/Shared.Infrastructure.csproj" Id="5a9f3ed1-9b81-4e8a-be2b-4c81f6d5b1d4" />
+  </Folder>
+</Solution>

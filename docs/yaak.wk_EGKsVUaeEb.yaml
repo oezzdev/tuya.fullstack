@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_EGKsVUaeEb
+createdAt: 2026-01-19T07:44:22.852269100
+updatedAt: 2026-01-19T07:44:22.852269600
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Fullstack
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0
