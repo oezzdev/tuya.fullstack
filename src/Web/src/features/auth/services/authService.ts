@@ -1,9 +1,7 @@
-import axios from 'axios';
-
-const API_URL = 'https://localhost:7034/api/users';
+import api from "../../../services/api";
 
 export const login = async (username: string, password: string) => {
-  const response = await axios.post(`${API_URL}/auth`, { username, password });
+  const response = await api.post(`/users/auth`, { username, password });
   if (response.data.token) {
     localStorage.setItem('user_token', response.data.token);
   }

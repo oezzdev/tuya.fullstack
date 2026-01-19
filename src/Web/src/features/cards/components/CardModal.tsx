@@ -11,6 +11,8 @@ const CardModal = ({ onClose, onSubmit }: CardModalProps) => {
         number: '',
         holderName: '',
         expirationDate: '',
+        cvv: '',
+        balance: 0
     });
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -35,7 +37,7 @@ const CardModal = ({ onClose, onSubmit }: CardModalProps) => {
                             required
                             className="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none"
                             placeholder="0000 0000 0000 0000"
-                            onChange={(e) => setFormData({...formData, number: e.target.value})}
+                            onChange={(e) => setFormData({ ...formData, number: e.target.value })}
                         />
                     </div>
                     <div>
@@ -44,20 +46,39 @@ const CardModal = ({ onClose, onSubmit }: CardModalProps) => {
                             required
                             className="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none"
                             placeholder="EJ. JUAN PEREZ"
-                            onChange={(e) => setFormData({...formData, holderName: e.target.value})}
+                            onChange={(e) => setFormData({ ...formData, holderName: e.target.value })}
                         />
                     </div>
-                    <div className="grid grid-cols-2 gap-4">
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Vencimiento</label>
-                            <input
-                                required
-                                type='date'
-                                placeholder="MM/YY"
-                                className="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none"
-                                onChange={(e) => setFormData({...formData, expirationDate: e.target.value})}
-                            />
-                        </div>
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Vencimiento</label>
+                        <input
+                            required
+                            type='date'
+                            placeholder="MM/YY"
+                            className="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none"
+                            onChange={(e) => setFormData({ ...formData, expirationDate: e.target.value })}
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">CVV</label>
+                        <input
+                            required
+                            type="password"
+                            className="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none"
+                            placeholder="•••"
+                            maxLength={4}
+                            onChange={(e) => setFormData({ ...formData, cvv: e.target.value })}
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Balance Inicial</label>
+                        <input
+                            required
+                            type="number"
+                            className="w-full border border-gray-300 rounded-lg p-2.5 focus:ring-2 focus:ring-blue-500 outline-none"
+                            placeholder="0.00"
+                            onChange={(e) => setFormData({ ...formData, balance: parseFloat(e.target.value) })}
+                        />
                     </div>
                     <button
                         type="submit"

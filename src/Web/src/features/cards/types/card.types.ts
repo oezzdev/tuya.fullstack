@@ -11,4 +11,6 @@ export interface CreateCardRequest {
     number: string;
     holderName: string;
     expirationDate: string;
+    cvv: string;
+    balance: number;
 }
